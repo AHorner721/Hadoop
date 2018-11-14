@@ -25,5 +25,5 @@ Hadoop is an open source big data management system. It is used for fast and rel
     Use to increase data analysis and scale resources according to client requirements.
     Supports multiple ways of processing data, like interactive query on Apache Spark, and other processing engines.
     
- -Utilities:
+-Utilities:
     Used to facilitate other components. (HDFS, MapReduce,YARN)
