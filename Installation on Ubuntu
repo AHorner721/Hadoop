@@ -1,0 +1,5 @@
+Link to online instructions: https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html
+
+Step 1. update to Java 8 or higher
+
+Step 2. Install Hadoop version 2.8.5 from: https://hadoop.apache.org/releases.html
