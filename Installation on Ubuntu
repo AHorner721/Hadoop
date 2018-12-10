@@ -46,3 +46,10 @@ enter the following lines:
     </property>
 </configuration>
  
+3. format namenode:
+  $ bin/hdfs namenode -format
+  $ sbin/start-dfs.sh
+  $ bin/hdfs dfs -mkdir /user
+  $ bin/hdfs dfs -mkdir /user/<username>
+  
+4. View Hadoop webpage on http://localhost:50070/
