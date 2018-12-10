@@ -1,3 +1,24 @@
 Mapreduce Word Count Tutorial
 
 link to youtube tutorial: https://www.youtube.com/watch?v=6sK3LDY7Pp4&t=247s
+
+Step 1.)Download wordcount.java
+Step 2.)Create new folder for input data/add own custom text file to this folder
+Step 3.)Create new folder to hold java class files
+
+<In command line>
+Step 4.)Set HADOOP_CLASSPATH enviornment variable
+Step 5.)export HADOOP_CLASSPATH=$(hadoop classpath) /<make sure it has been set correctly: echo $HADOOP_CLASSPATH>
+Step 6.)Create a directory on HDFS hadoop fs -mkdir <DIRECTORY_NAME> /create a directory inside it for the input hadoop fs -mkdir <HDFS_INPUT_DIRECTORY>
+
+<online>
+Step 7.)Go to localhost:50070 
+
+<in commandline>
+Step 8.)upload file to that directory <drag n drop it to commandline.
+Step 9.)change the current directory to the current tutorial directory: cd <TUTORIAL_DIRECTORY>
+Step 10.)compile the java code: javac -classpath ${HADOOP_CLASSPATH} -d <CLASS_FOLDER> <TUTORIAL_JAVA_FILE>
+sTEP 11.)Put the output files in oe jar file: jar -cvf <JAR_FILE_NAME> -C <CLASSES_FOLDER>
+Step 12.)Now run the jar file on Hadoop: hadoop jar <JAR_FILE> <CLASS_NAME> <HDFS_INPUT_DIRECTORY> <HDFS_OUTPUT_DIRECTORY>
+(.)  Output: hadoop dfs -cat <HDFS_OUTPUT_DIRECTORY>
+  
