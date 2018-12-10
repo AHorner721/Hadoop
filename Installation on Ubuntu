@@ -1,5 +1,31 @@
-Link to online instructions: https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html
+Link to online instructions:https://hadoop.apache.org/docs/r2.8.5/hadoop-project-dist/hadoop-common/SingleCluster.html
 
 Step 1. update to Java 8 or higher
 
-Step 2. Install Hadoop version 2.8.5 from: https://hadoop.apache.org/releases.html
+Step 2. Download Hadoop version 2.8.5 from: https://hadoop.apache.org/releases.html
+
+Step 3 Extract hadoop 2.8.5 tar file with cmd: tar -xzvf hadoop-2.8.5.tar.gz
+
+Step 4: Move extracted files to /usr/local/hadoop with cmd: sudo mv hadoop-2.8.5 /usr/local/hadoop
+
+***Configure Hadoop Java Home***
+
+check default path with cmd: readlink -f /usr/bin/java | sed "s:bin/java::"
+
+Step 1: Open hadoop environment cmd: sudo nano /usr/local/hadoop/etc/hadoop/hadoop-env.sh
+
+inside the environment go to the line --> #export JAVA_HOME=${JAVA_HOME}
+change the line to the java version displayed from readlink command to --> #export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
+
+Step 2: run hadoop cmd: /usr/local/hadoop/bin/hadoop
+
+***Stand Alone Mode***
+
+enter the following lines:
+
+ $ mkdir input
+ $ cp etc/hadoop/*.xml input
+ $ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.8.5.jar grep input output 'dfs[a-z.]+'
+ $ cat output/*
+ 
+ 
