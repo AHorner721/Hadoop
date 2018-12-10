@@ -28,4 +28,21 @@ enter the following lines:
  $ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.8.5.jar grep input output 'dfs[a-z.]+'
  $ cat output/*
  
+***Configure Hadoop Webpage***
+
+1. modify the etc/hadoop/core-site.xml:
+<configuration>
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://localhost:9000</value>
+    </property>
+</configuration>
+
+2. modify the etc/hadoop/hdfs-site.xml:
+<configuration>
+    <property>
+        <name>dfs.replication</name>
+        <value>1</value>
+    </property>
+</configuration>
  
