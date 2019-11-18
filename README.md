@@ -25,11 +25,10 @@ Consists of 4 main components:
   
 -YARN:
     Yet Another Resource Negotiator
-    Cluster resource manager.Used to reduce bottleneck from mapReduce version 1. It splits Job Tracker in two. 
-    
-    1)Manages resources for applications
-    2)Managers resources for job scheduling/queue.
-    
+    Cluster resource manager.Used to reduce bottleneck from mapReduce version 1. 
+    Cluster resource manager splits Job Tracker in two parts: 
+    1. Manages resources for applications
+    2. Manages resources for job scheduling/queue.
     Use to increase data analysis and scale resources according to client requirements.
     Supports multiple ways of processing data, like interactive query on Apache Spark, and other processing engines.
     
