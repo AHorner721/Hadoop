@@ -3,7 +3,8 @@ Learn to use Hadoop on Ubuntu 18.04
 
 # What I Learned
 Hadoop is an open source big data management system. It is used for fast and reliable data storage/processing.
-4 main components:
+
+Consists of 4 main components:
   1. HDFS
   2. MapReduce
   3. YARN
@@ -25,8 +26,10 @@ Hadoop is an open source big data management system. It is used for fast and rel
 -YARN:
     Yet Another Resource Negotiator
     Cluster resource manager.Used to reduce bottleneck from mapReduce version 1. It splits Job Tracker in two. 
+    
     1)Manages resources for applications
     2)Managers resources for job scheduling/queue.
+    
     Use to increase data analysis and scale resources according to client requirements.
     Supports multiple ways of processing data, like interactive query on Apache Spark, and other processing engines.
     
