@@ -1,7 +1,7 @@
 # Hadoop
 Learn to use Hadoop on Ubuntu 18.04 
 
-# What I Learned
+## What I Learned
 Hadoop is an open source big data management system. It is used for fast and reliable data storage/processing.
 
 Consists of 4 main components:
