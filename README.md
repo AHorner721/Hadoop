@@ -12,7 +12,7 @@ Consists of 4 main components:
   
 HDFS:
     Hadoop Distributed File System
-    File system of hadoop framework.
+    of hadoop framework.
     Designed to store and manage huge volumes of data efficiently.
     Due to the way HDFS operates it provides redundancy.
 
